@@ -1,0 +1,67 @@
+﻿
+
+@{
+    ViewBag.Title = "Update product";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Update product</title>
+</head>
+<body>
+    @using (Html.BeginForm("Submit", "ProductUpdate", FormMethod.Post))
+    {
+        <h2 style="color: #3498DB; font-weight: bold">Tạo QR Code</h2>
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <h4 style="font-style:italic; color: #3498DB">* Chọn sản phẩm cần tạo QR Code</h4>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <select name="proID" style="height: 29px; font-size: 18px;">
+                            <option value="">Chọn sản phẩm</option>
+                            @{
+                                using (var db = new FakeProductIden.Models.FakeProductIdenEntities())
+                                {
+                                    var pro = db.Products.ToList();
+                                    ViewBag.ProductList = pro;
+                                };
+                                foreach (var item in ViewBag.ProductList)
+                                {
+                                    <option value="@item.pr_id">@item.pr_name</option>
+                                };
+                            }
+
+                        </select>
+
+                    </td>
+                    <td>
+                        <h4 style="font-style:normal; color: #3498DB; width: 180px;">Giá bán (VNĐ)</h4>
+                    </td>
+                    <td>
+                        <input name="proPrice" type="number" style="width: 250px; height: 29px; font-size: 18px;" />
+                        <button style="height: 30px; width: 90px; background-color: #3498DB; color: #fff; border-width: 0px; border-radius: 2px; font-weight: bold">Xác nhận</button>
+                    </td>
+
+                </tr>
+
+            </tbody>
+        </table>
+    }
+    @if (ViewBag.Message != null)
+    {
+        <script type="text/javascript" charset="utf-8">
+
+            window.onload = function () {
+                alert("@ViewBag.Message");
+            };
+        </script>
+    }
+</body>
+</html>
