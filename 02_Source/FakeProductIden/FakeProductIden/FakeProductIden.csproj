@@ -135,6 +135,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ProductCreateController.cs" />
     <Compile Include="Controllers\ProductUpdateController.cs" />
     <Compile Include="Controllers\QRGeneratorController.cs" />
     <Compile Include="Controllers\QRValidateController.cs" />
@@ -225,6 +226,7 @@
     <Content Include="Views\QRGenerator\Index.cshtml" />
     <Content Include="Views\QRValidate\Index.cshtml" />
     <Content Include="Views\ProductUpdate\Index.cshtml" />
+    <Content Include="Views\ProductCreate\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

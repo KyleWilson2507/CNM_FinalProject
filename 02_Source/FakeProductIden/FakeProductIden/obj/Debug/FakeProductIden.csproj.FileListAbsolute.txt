@@ -157,3 +157,4 @@ E:\Tai lieu hoc\Nam 7\HK2\New Tech\Blockchain_FinalProject\02_Source\FakeProduct
 E:\Tai lieu hoc\Nam 7\HK2\New Tech\Blockchain_FinalProject\02_Source\FakeProductIden\FakeProductIden\obj\Debug\FakeProductIden.csproj.CopyComplete
 E:\Tai lieu hoc\Nam 7\HK2\New Tech\Blockchain_FinalProject\02_Source\FakeProductIden\FakeProductIden\obj\Debug\FakeProductIden.dll
 E:\Tai lieu hoc\Nam 7\HK2\New Tech\Blockchain_FinalProject\02_Source\FakeProductIden\FakeProductIden\obj\Debug\FakeProductIden.pdb
+E:\Tai lieu hoc\Nam 7\HK2\New Tech\Blockchain_FinalProject\02_Source\FakeProductIden\FakeProductIden\obj\Debug\FakeProductIden.csprojAssemblyReference.cache

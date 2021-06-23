@@ -20,7 +20,7 @@ namespace FakeProductIden.Controllers
 
             using (var context = new FakeProductIdenEntities())
             {
-                var _product = (from p in context.Products where (p.pr_id == id) select p).LastOrDefault();
+                var _product = (from p in context.Products where (p.pr_id == id) select p).ToList();
                 ViewBag.ProductList = _product;
             }
 
