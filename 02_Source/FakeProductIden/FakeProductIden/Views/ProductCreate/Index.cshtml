@@ -8,12 +8,12 @@
 
 @using (Html.BeginForm("Submit", "ProductCreate", FormMethod.Post))
 {
-    <h2 style="color: #3498DB; font-weight: bold;margin-bottom: 30px;">Thêm sản phẩm</h2>
+    <h2 style="color: #3498DB; font-weight: bold;margin-bottom: 30px;">Create product</h2>
     <table>
         <tbody>
             <tr>
                 <td>
-                    <h4 style="font-style:normal; color: #3498DB; width: 180px;">Tên sản phẩm</h4>
+                    <h4 style="font-style:normal; color: #3498DB; width: 180px;">Title</h4>
                 </td>
                 <td>
                     <input name="proName" style="width: 250px; height: 29px; font-size: 18px;" />
@@ -21,11 +21,11 @@
             </tr>
             <tr>
                 <td>
-                    <h4 style="font-style:normal; color: #3498DB">Nhãn hiệu</h4>
+                    <h4 style="font-style:normal; color: #3498DB">Company</h4>
                 </td>
                 <td>
                     <select name="proCmp" style="width: 250px; height: 29px; font-size: 18px;">
-                        <option value="">Nhãn hiệu</option>
+                        <option value="">Select Company</option>
                         @{
                             using (var ProductDB = new FakeProductIden.Models.FakeProductIdenEntities())
                             {
@@ -43,11 +43,11 @@
             </tr>
             <tr>
                 <td>
-                    <h4 style="font-style:normal; color: #3498DB; width: 180px;">Loại sản phẩm</h4>
+                    <h4 style="font-style:normal; color: #3498DB; width: 180px;">Type</h4>
                 </td>
                 <td>
                     <select name="proType" style="width: 250px; height: 29px; font-size: 18px;">
-                        <option value="">Loại sản phẩm</option>
+                        <option value="">Select type</option>
                         @{
                             using (var ProductDB = new FakeProductIden.Models.FakeProductIdenEntities())
                             {
@@ -65,7 +65,7 @@
             </tr>
             <tr>
                 <td>
-                    <h4 style="font-style:normal; color: #3498DB; width: 180px;">Xuất xứ</h4>
+                    <h4 style="font-style:normal; color: #3498DB; width: 180px;">Location</h4>
                 </td>
                 <td>
                     <input name="proOrigin" style="width: 250px; height: 29px; font-size: 18px;" />
@@ -73,7 +73,7 @@
             </tr>
             <tr>
                 <td>
-                    <h4 style="font-style:normal; color: #3498DB; width: 180px;">Giá bán (VNĐ)</h4>
+                    <h4 style="font-style:normal; color: #3498DB; width: 180px;">Price (VNĐ)</h4>
                 </td>
                 <td>
                     <input name="proPrice" type="number" style="width: 250px; height: 29px; font-size: 18px;" />
@@ -82,7 +82,7 @@
             <tr>
                 <td></td>
                 <td>
-                    <button style="height: 30px; width: 90px; background-color: #3498DB; color: #fff; border-width: 0px; border-radius: 2px; font-weight: bold;margin-top: 20px;" type="submit">Xác nhận</button>
+                    <button style="height: 30px; width: 90px; background-color: #3498DB; color: #fff; border-width: 0px; border-radius: 2px; font-weight: bold;margin-top: 20px;" type="submit">Create</button>
                 </td>
             </tr>
         </tbody>
